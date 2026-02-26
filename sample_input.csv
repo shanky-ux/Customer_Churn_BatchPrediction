@@ -1,0 +1,11 @@
+customer_id,contract_length,support_calls,subscription_type,payment_delay,usage_frequency,total_spend,last_interaction,tenure_months,region,churn
+1,4,8,Basic,9,Medium,1168.93,Phone,59,East,Yes
+2,28,0,Plus,12,High,3348.35,Chat,33,West,Yes
+3,23,3,Basic,9,Low,3857.62,Email,3,North,Yes
+4,16,4,Premium,8,Medium,916.52,In-person,53,North,Yes
+5,16,7,Plus,7,High,314.91,Chat,57,North,Yes
+6,31,1,Plus,3,High,2253.98,Chat,17,South,No
+7,4,4,Basic,4,Medium,3892.72,Email,24,South,No
+8,25,1,Premium,11,Low,3288.82,Chat,2,North,Yes
+9,8,7,Basic,1,Low,3539.22,Email,48,East,Yes
+10,6,2,Basic,0,High,432.50,Phone,12,West,No

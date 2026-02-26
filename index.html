@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Customer Churn Forecasting — Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Customer Churn Forecasting</h1>
+      <p class="subtitle">Upload a CSV and run batch predictions in your browser (demo).</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>1. Upload CSV (training or batch prediction)</h2>
+      <p class="muted">Your CSV should include column headers. Example headers accepted:</p>
+      <pre class="example-headers">customer_id,contract_length,support_calls,subscription_type,payment_delay,usage_frequency,total_spend,last_interaction,tenure_months,region,churn</pre>
+      <div class="controls">
+        <input id="fileInput" type="file" accept=".csv" />
+        <button id="useSample" class="btn">Use sample CSV</button>
+      </div>
+      <p class="muted">The app will predict churn using a simple rule-based model (demo). You can replace the logic in <code>script.js</code> to call your API.</p>
+    </section>
+
+    <section id="resultsSection" class="card hidden">
+      <h2>2. Preview & Predictions</h2>
+      <div class="row">
+        <div class="col-7">
+          <div id="tableWrap" class="table-wrap"></div>
+        </div>
+        <div class="col-5">
+          <div class="stats-card">
+            <h3>Prediction Summary</h3>
+            <canvas id="churnChart" width="400" height="300"></canvas>
+            <div class="legend" id="legend"></div>
+            <button id="downloadBtn" class="btn primary">Download predictions (CSV)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. How predictions work (demo)</h2>
+      <ul>
+        <li>Predicts <strong>Yes</strong> if <code>support_calls &gt; 5</code> OR <code>payment_delay &gt; 7</code> OR <code>usage_frequency == 'Low'</code>.</li>
+        <li>This is a placeholder rule to demo the interface. Replace the logic in <code>script.js</code> with an API call to your deployed model endpoint for real predictions.</li>
+      </ul>
+    </section>
+
+    <footer class="card muted">
+      <p>Built for the <strong>Customer Churn Forecasting</strong> project — export to GitHub Pages or deploy anywhere static files are supported.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -20,7 +20,7 @@
 
 Customer Churn Batch Prediction is a modern, responsive browser-based web application that enables users to upload a CSV file and generate churn predictions directly within the browser.
 
-This project simulates a rule-based churn prediction engine and serves as a frontend foundation for integrating real Machine Learning models via backend APIs..
+This project simulates a rule-based churn prediction engine and serves as a frontend foundation for integrating real Machine Learning models via backend APIs.
 
 It demonstrates:
 

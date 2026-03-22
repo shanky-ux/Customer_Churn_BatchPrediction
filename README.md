@@ -50,7 +50,7 @@ Regular commits are pushed to maintain continuous development and scalability.
 
 ---
 
-## ✨ Key Features
+## ✨ Key Feature
 
 - 📂 Upload CSV file for batch prediction  
 - 📄 Built-in sample dataset option  
